@@ -5,12 +5,13 @@
   --foreground: #171717;
 }
 
-@theme inline {
+/* @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
+  --font-goldman: var(--font-goldman)
+} */
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -22,5 +23,25 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-goldman), sans-serif;
+  font-style: normal;
 }
+
+/* --- MEDIA QUERY: Włącz tło TYLKO od breakpointu LG (1024px) --- */
+@media (min-width: 768px) {
+    body {
+        
+        background-image: url('/halftone_pattern_in_distort_effect_background.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        
+        background-color: initial; 
+    }
+}
+
+
+/* in order to switch on problems with @theme underlying reference
+    vs settings -> settings -> command line unknown -> CSS>LInt: Unknown At Rules 'warning' or 'ignore'
+*/
