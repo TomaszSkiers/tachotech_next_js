@@ -3,13 +3,19 @@
 
 import React from 'react';
 // Importujemy ikony, aby komponent był "fajny"
-import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+// Dodajemy FaFacebookF
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebookF } from 'react-icons/fa'; 
 
-// 1. Definiujemy dane kontaktowe w jednym miejscu
+// 1. Definujemy dane kontaktowe w jednym miejscu
 const contactInfo = {
   address: "05-124 Skrzeszew, ul Nowodworska 1a",
   phone: "+48 518 183 044",
   email: `tachotech.bartoszskiers@gmail.com.pl`
+};
+
+// 1.1. Definiujemy linki do mediów społecznościowych
+const socialInfo = {
+    facebook: "https://www.facebook.com/profile.php?id=61553860664338"
 };
 
 interface locationData {
@@ -109,6 +115,25 @@ const ContactSection = () => {
                 </a>
               </div>
             </div>
+            
+            {/* Facebook - NOWY ELEMENT */}
+            <div className="flex items-center">
+              <div className="flex-shrink-0 bg-blue-600 rounded-md h-12 w-12 flex items-center justify-center text-white">
+                <FaFacebookF className="h-6 w-6" />
+              </div>
+              <div className="ml-4 min-w-0">
+                <h4 className="text-lg font-medium text-gray-900">Facebook</h4>
+                <a 
+                    href={socialInfo.facebook} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-gray-600 hover:text-blue-700 hover:underline break-words"
+                >
+                  Odwiedź nas na Facebooku
+                </a>
+              </div>
+            </div>
+            {/* KONIEC NOWEGO ELEMENTU */}
 
           </div>
         </div>
@@ -149,6 +174,3 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
-
-
-
