@@ -34,7 +34,7 @@ const ContactSection: React.FC = () => {
       <div className="grid md:grid-cols-2 gap-4">
         {/* Dane kontaktowe */}
         <div className="flex flex-col justify-center">
-          <div className="bg-gray-50 h-100 p-6 rounded-lg shadow-inner border border-gray-200 space-y-6">
+          <div className="bg-gray-50 h-110 p-6 rounded-lg shadow-inner border border-gray-200 space-y-6">
             {/* Adres */}
             <div className="flex items-start space-x-4">
               <div
@@ -137,7 +137,7 @@ const ContactSection: React.FC = () => {
         </div>
 
         {/* Mapa Google */}
-        <div className="w-full h-100 bg-gray-200 rounded-lg shadow-md overflow-hidden">
+        <div className="w-full h-110 bg-gray-200 rounded-lg shadow-md overflow-hidden">
           <iframe
             title="Mapa dojazdu do TACHO-TECH w Skrzeszewie przy ulicy Nowodworskiej 1a"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4074.5619755217404!2d20.913878677596916!3d52.453053941182695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471eb916f9dab6ed%3A0x88f23f549ef3d759!2sTACHO-TECH!5e1!3m2!1spl!2spl!4v1758625774431!5m2!1spl!2spl"
