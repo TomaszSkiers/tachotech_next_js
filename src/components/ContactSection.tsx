@@ -1,6 +1,11 @@
 import React from "react";
 // Dodajemy FaFacebookF (lub FaFacebook, jeśli wolisz)
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebookF } from "react-icons/fa";
+import {
+  FaPhone,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaFacebookF,
+} from "react-icons/fa";
 
 const ContactSection: React.FC = () => {
   // Możesz zdefiniować adres URL Facebooka jako stałą
@@ -36,15 +41,17 @@ const ContactSection: React.FC = () => {
                 className="p-2 bg-blue-600 rounded-md flex-shrink-0"
                 aria-hidden="true"
               >
-                <FaMapMarkerAlt className="w-6 h-6"/>
+                <FaMapMarkerAlt className="w-6 h-6" />
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-800 mb-1">
                   Adres
                 </h3>
                 <address className="text-gray-600 not-italic">
-                  <strong>TACHO-TECH</strong><br />
-                  ul. Nowodworska 1a<br />
+                  <strong>TACHO-TECH</strong>
+                  <br />
+                  ul. Nowodworska 1a
+                  <br />
                   05-124 Skrzeszew
                 </address>
               </div>
@@ -56,9 +63,9 @@ const ContactSection: React.FC = () => {
                 className="p-2 bg-blue-600 rounded-md flex-shrink-0"
                 aria-hidden="true"
               >
-                <FaPhone className="h-6 w-6"/>
+                <FaPhone className="h-6 w-6" />
               </div>
-              <div>
+              <div className="flex flex-col">
                 <h3 className="text-lg font-semibold text-gray-800 mb-1">
                   Telefon
                 </h3>
@@ -69,6 +76,13 @@ const ContactSection: React.FC = () => {
                 >
                   +48 518 183 044
                 </a>
+                <a
+                  href="tel:+48512221184"
+                  title="Zadzwoń do TACHO-TECH"
+                  className="text-gray-600 hover:text-blue-600 transition-colors"
+                >
+                  +48 512 221 184
+                </a>
               </div>
             </div>
 
@@ -78,7 +92,7 @@ const ContactSection: React.FC = () => {
                 className="p-2 bg-blue-600 rounded-md flex-shrink-0"
                 aria-hidden="true"
               >
-                <FaEnvelope className="w-6 h-6"/>
+                <FaEnvelope className="w-6 h-6" />
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-800 mb-1">
@@ -101,7 +115,7 @@ const ContactSection: React.FC = () => {
                 aria-hidden="true"
               >
                 {/* Używamy FaFacebookF */}
-                <FaFacebookF className="w-6 h-6"/> 
+                <FaFacebookF className="w-6 h-6" />
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-800 mb-1">
@@ -119,7 +133,6 @@ const ContactSection: React.FC = () => {
               </div>
             </div>
             {/* Koniec nowego elementu */}
-
           </div>
         </div>
 
@@ -144,21 +157,22 @@ const ContactSection: React.FC = () => {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
-          "name": "TACHO-TECH",
-          "address": {
+          name: "TACHO-TECH",
+          address: {
             "@type": "PostalAddress",
-            "streetAddress": "ul. Nowodworska 1a",
-            "addressLocality": "Skrzeszew",
-            "postalCode": "05-124",
-            "addressCountry": "PL",
+            streetAddress: "ul. Nowodworska 1a",
+            addressLocality: "Skrzeszew",
+            postalCode: "05-124",
+            addressCountry: "PL",
           },
-          "telephone": "+48518183044",
-          "email": "tachotech.bartoszskiers@gmail.com",
-          "url": "https://twojastrona.pl",
+          telephone: [
+            "+48518183044",
+            "+48512221184", 
+          ],
+          email: "tachotech.bartoszskiers@gmail.com",
+          url: "https://tachotech.vercel.app",
           // Dodanie linku do mediów społecznościowych (jest opcjonalne w LocalBusiness)
-          "sameAs": [
-            facebookUrl
-          ]
+          sameAs: ["https://www.facebook.com/profile.php?id=61553860664338]"],
         })}
       </script>
     </section>

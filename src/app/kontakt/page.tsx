@@ -10,6 +10,7 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebookF } from 'react-icons/fa
 const contactInfo = {
   address: "05-124 Skrzeszew, ul Nowodworska 1a",
   phone: "+48 518 183 044",
+  phone2: "+48 512 221 184",
   email: `tachotech.bartoszskiers@gmail.com.pl`
 };
 
@@ -95,10 +96,13 @@ const ContactSection = () => {
               <div className="flex-shrink-0 bg-blue-600 rounded-md h-12 w-12 flex items-center justify-center text-white">
                 <FaPhone className="h-6 w-6" />
               </div>
-              <div className="ml-4">
+              <div className="ml-4 flex flex-col">
                 <h4 className="text-lg font-medium text-gray-900">Telefon</h4>
                 <a href={`tel:${contactInfo.phone.replace(/\s/g, '')}`} className="text-gray-600 hover:text-blue-700 hover:underline">
                   {contactInfo.phone}
+                </a>
+                <a href={`tel:${contactInfo.phone2.replace(/\s/g, '')}`} className="text-gray-600 hover:text-blue-700 hover:underline">
+                  {contactInfo.phone2}
                 </a>
               </div>
             </div>

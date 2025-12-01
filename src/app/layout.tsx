@@ -13,7 +13,7 @@ const goldman = Goldman({
 });
 
 export const metadata: Metadata = {
-  title: "Serwis Tachografów Cyfrowych i Analogowych | Kalibracja i Legalizacja | Tacho-tech",
+  title: "Serwis Tachografów Cyfrowych Kalibracja Naprawa Tacho-tech",
   description:
     "Twój autoryzowany punkt. Doświadczeni technicy i kompleksowa obsługa tachografów cyfrowych wszystkich marek (VDO, Stoneridge, Efkon). Wystawiamy certyfikaty. Skontaktuj się z nami!",
   verification:{
