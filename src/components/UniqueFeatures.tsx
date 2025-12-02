@@ -3,7 +3,6 @@ import Encouragers from "./Encouragers";
 
 const UniqueFeatures = () => {
   const features = [
-    "24h / 7",
     "szybko",
     "duży parking",
     "najlepsze ceny",
@@ -20,7 +19,7 @@ const UniqueFeatures = () => {
     <section
       id="unique-features"
       aria-labelledby="unique-features-heading"
-      className="max-w-4xl pt-0.5 mx-auto bg-gradient-to-b from-white to-gray-400 rounded-lg shadow-md mt-5 border-t-4 border-green-500"
+      className="flex flex-col max-w-4xl mx-auto w-full pt-0.5 bg-gradient-to-b from-white to-gray-400 rounded-lg shadow-md mt-5 border-t-4 border-green-500"
     >
       <h2
         id="unique-features-heading"

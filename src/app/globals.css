@@ -29,18 +29,15 @@ body {
 
 /* --- MEDIA QUERY: Włącz tło TYLKO od breakpointu LG (1024px) --- */
 @media (min-width: 768px) {
-    body {
-        
-        background-image: url('/halftone_pattern_in_distort_effect_background.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        
-        
-        background-color: initial; 
-    }
+  body {
+    background: linear-gradient(
+      90deg,
+      #000 0%,
+      /* Lewa strona - czarny */ #1e3a8a 50%,
+      /* Środek - ciemnoniebieski */ #000 100% /* Prawa strona - czarny */
+    );
+  }
 }
-
 
 /* in order to switch on problems with @theme underlying reference
     vs settings -> settings -> command line unknown -> CSS>LInt: Unknown At Rules 'warning' or 'ignore'

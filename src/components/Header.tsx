@@ -29,21 +29,21 @@ const Header = () => {
           <nav className="hidden md:flex space-x-8">
             {/* <Link href="/uslugi-dodatkowe" className="text-white hover:text-red-200 font-semibold transition duration-150">
               Wszystkie usługi
-            </Link>
-            <Link href="/o-nas" className="text-white hover:text-red-200 font-semibold transition duration-150">
-              O Nas
             </Link> */}
             <Link
               href="/"
               className="text-white hover:text-red-200 font-semibold transition duration-150"
             >
-              Home
+              tachografy
+            </Link>
+            <Link href="/etoll" className="text-white hover:text-red-200 font-semibold transition duration-150">
+              e-toll
             </Link>
             <Link
               href="/kontakt"
               className="text-white hover:text-red-200 font-semibold transition duration-150"
             >
-              Kontakt
+              kontakt
             </Link>
           </nav>
 
@@ -78,22 +78,23 @@ const Header = () => {
               Wszystkie usługi
             </Link>
           </li>
-          <li>
-            <Link
-              href="/o-nas"
-              onClick={() => setIsMenuOpen(false)}
-              className="text-white hover:text-red-300 font-semibold transition duration-150"
-            >
-              O Nas
-            </Link>
-          </li> */}
+           */}
           <li>
             <Link
               href="/"
               onClick={() => setIsMenuOpen(false)}
               className="text-white hover:text-red-300 font-semibold transition duration-150"
             >
-              Home
+              Tachografy
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/etoll"
+              onClick={() => setIsMenuOpen(false)}
+              className="text-white hover:text-red-300 font-semibold transition duration-150"
+            >
+              e-toll
             </Link>
           </li>
           <li>
@@ -105,6 +106,7 @@ const Header = () => {
               Kontakt
             </Link>
           </li>
+          
         </ul>
       </div>
     </header>
