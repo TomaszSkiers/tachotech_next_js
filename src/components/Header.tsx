@@ -85,7 +85,7 @@ const Header = () => {
               onClick={() => setIsMenuOpen(false)}
               className="text-white hover:text-red-300 font-semibold transition duration-150"
             >
-              Tachografy
+              tachografy
             </Link>
           </li>
           <li>
@@ -103,7 +103,7 @@ const Header = () => {
               onClick={() => setIsMenuOpen(false)}
               className="text-white hover:text-red-300 font-semibold transition duration-150"
             >
-              Kontakt
+              kontakt
             </Link>
           </li>
           
